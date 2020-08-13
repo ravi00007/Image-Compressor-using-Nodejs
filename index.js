@@ -67,9 +67,9 @@ app.post('/compress/uploads/:name/:ext',async(req,res)=>{
   res.download(files[0].destinationPath)
 })
 
-app.listen(7000,()=>{
-    console.log('Server Started at port 7000');
-})
+// app.listen(7000,()=>{
+//     console.log('Server Started at port 7000');
+// })
 
 
 
