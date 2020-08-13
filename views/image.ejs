@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express File Uploading</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>File Uploded</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form action="/compress/uploads/<%=name%>/<%=ext%>" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                
+            </div>
+            <!-- <input type="submit" value="Compress and Download" class="btn btn-primary" /> -->
+            <button class="btn btn-primary" ><i class="fa fa-download"></i>Compress and Download</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
