@@ -56,7 +56,9 @@ app.post('/compress/uploads/:name/:ext',async(req,res)=>{
   const files = await imagemin(["uploads/" + req.params.name],{
       destination:"output",
       plugins: [
-          imageminJpegtran(),
+          imageminJpegtran({
+            quality:[0.3,0.5]
+          }),
           imageminPngquant({
               quality:[0.3,0.5]
           })
